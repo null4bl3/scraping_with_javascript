@@ -97,7 +97,7 @@ request(url, function(err, res, body) {
             var largest = Math.max.apply(Math, dimList);
             var found = _.find(imgList, function(obj){ return obj.w === largest; });
             // BELOW IS THE RETURN VALUE OF EVERY IMG TAG ON THE PAGE. AGAIN.
-            // NOT GUARANTEED, BUT MOST LIKELY AN IMAGE RELATED TO THE STORY.
+            // NOT GUARANTEED, BUT MOST LIKELY THE IMAGE FOUND IS RELATED TO THE STORY.
             if (found === undefined) {
               console.log('NO IMAGE URL FOUND');
             } else {
